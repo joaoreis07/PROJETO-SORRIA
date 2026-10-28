@@ -93,3 +93,6 @@
   .final-cta h2{font-size:clamp(43px,12vw,58px)}
   .final-flower{font-size:34px;right:2%;top:5px}
 }
+
+.photos-hero:after{content:'';position:absolute;right:12vw;top:15px;width:280px;height:280px;border:1px solid rgba(255,201,40,.12);border-radius:50%;box-shadow:inset 0 0 0 22px rgba(255,201,40,.018),0 0 90px rgba(255,201,40,.045);transform:rotate(-12deg);pointer-events:none}
+@media(max-width:900px){.photos-hero:after{display:none}.count-spark{display:none}.photos-hero-bottom{align-items:flex-start;gap:10px}.photos-hero-bottom span{flex:1;max-width:none}.photos-hero-bottom span:last-child{text-align:right}}
