@@ -1,0 +1,5 @@
+# Local originals retained for editing; deploy the optimized WebP copies.
+assets/fotos/**/*.jpg
+assets/selecionadas/**/*.jpg
+.vercel/
+node_modules/

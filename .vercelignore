@@ -1,0 +1,4 @@
+# The source JPEGs stay local. The site uses optimized WebP copies.
+assets/fotos/**/*.jpg
+assets/selecionadas/**/*.jpg
+.git/

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11110e">
+  <meta name="description" content="Galeria de fotos do Projeto Sorria. Veja momentos das ações de 2025 e da Páscoa de 2026.">
+  <title>Galeria de fotos — Projeto Sorria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="photos-page">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="topbar" id="top">
+    <a class="brand" href="index.html" aria-label="Projeto Sorria, página inicial"><img src="assets/logo-sorria.png" alt=""><span>PROJETO <b>SORRIA</b></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav class="nav" aria-label="Navegação principal"><a href="index.html#projeto">O projeto</a><a href="index.html#impacto">Impacto</a><a href="fotos.html" aria-current="page">Galeria</a><a href="index.html#faca-parte">Como ajudar</a></nav>
+    <a class="nav-cta" href="index.html#faca-parte">Quero ajudar <span>↗</span></a>
+  </header>
+  <main>
+    <section class="photos-hero">
+      <div class="photos-hero-inner">
+        <div class="photos-intro" data-reveal><a class="back-link" href="index.html"><span>←</span> VOLTAR AO PROJETO</a><div class="eyebrow"><span class="eyebrow-dot"></span> GALERIA DO PROJETO SORRIA</div><h1>Memórias que<br><em>seguem com a gente.</em></h1><p>Um álbum de encontros, cuidado e brincadeiras. Escolha um ano e abra qualquer foto para ver em mais detalhes.</p></div>
+        <div class="photos-count-card" data-reveal data-delay="120"><span class="count-spark">✳</span><strong id="photo-total">000</strong><small>FOTOS NA GALERIA</small><div class="count-card-line"></div><span class="count-card-foot">2025 <b>·</b> PÁSCOA 2026</span></div>
+      </div>
+      <div class="photos-hero-bottom"><span>ROLÂNDIA, PARANÁ</span><span>REGISTROS COMPARTILHADOS COM CARINHO</span></div>
+    </section>
+
+    <section class="photo-collection section">
+      <div class="collection-top" data-reveal><div><div class="eyebrow"><span class="eyebrow-dot"></span> MOMENTOS DE VERDADE</div><h2>Olha só quanta<br><em>coisa boa aconteceu.</em></h2></div><p>As fotos abrem em uma visualização ampliada. Use as setas para continuar passeando pelo álbum.</p></div>
+      <div class="photo-tools" data-reveal>
+        <div class="filter-group" role="group" aria-label="Filtrar fotos por ano">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Todas <span id="all-count"></span></button>
+          <button class="filter-button" type="button" data-filter="2025" aria-pressed="false">Ações 2025 <span id="year-25-count"></span></button>
+          <button class="filter-button" type="button" data-filter="2026" aria-pressed="false">Páscoa 2026 <span id="year-26-count"></span></button>
+        </div>
+        <label class="photo-search"><span aria-hidden="true">⌕</span><input id="photo-search" type="search" placeholder="Buscar por ano..." aria-label="Buscar fotos por ano"></label>
+      </div>
+      <p class="photo-results" id="photo-results" aria-live="polite"></p>
+      <div class="photo-grid" id="photo-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>☺</span><p>Nenhuma foto encontrada com esse filtro.</p></div>
+      <div class="photo-end-note" data-reveal><span>♥</span><p>Cada foto guarda um pedacinho de um dia especial.<br><b>Obrigado por fazer parte dessa história.</b></p><a href="index.html#faca-parte">Agora vem você <span>↗</span></a></div>
+    </section>
+    <dialog class="photo-lightbox" id="photo-lightbox" aria-label="Foto ampliada">
+      <button class="lightbox-close" type="button" aria-label="Fechar">×</button>
+      <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Foto anterior">←</button>
+      <figure><img id="lightbox-image" src="" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+      <button class="lightbox-arrow lightbox-next" type="button" aria-label="Próxima foto">→</button>
+    </dialog>
+  </main>
+  <footer class="footer"><a class="brand" href="index.html"><img src="assets/logo-sorria.png" alt=""><span>PROJETO <b>SORRIA</b></span></a><span>FEITO COM CARINHO EM ROLÂNDIA, PR <b>♥</b></span><a href="#top">VOLTAR AO TOPO ↑</a></footer>
+  <script src="script.js"></script>
+  <script src="assets/fotos/manifest.js"></script>
+  <script src="fotos.js"></script>
+</body>
+</html>
