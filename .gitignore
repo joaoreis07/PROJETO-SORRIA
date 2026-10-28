@@ -3,3 +3,5 @@ assets/fotos/**/*.jpg
 assets/selecionadas/**/*.jpg
 .vercel/
 node_modules/
+
+.vercel
